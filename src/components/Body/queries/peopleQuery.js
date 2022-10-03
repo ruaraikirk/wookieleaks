@@ -12,6 +12,7 @@ const PEOPLE_QUERY = gql`
         node {
           id
           name
+          gender
         }
       }
     }

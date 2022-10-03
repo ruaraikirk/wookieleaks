@@ -7,7 +7,7 @@ Wookieleaks is a small web app built with Vite and React using SWAPI [via its Gr
 
 ## Live Demo
 
-Hosted on [Netlify](https://63275feddefec85790897a91--eclectic-youtiao-88ef51.netlify.app/)
+Hosted on [Netlify](https://lucent-hamster-a5cb19.netlify.app/)
 
 ## Tools
 

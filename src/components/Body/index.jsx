@@ -32,8 +32,8 @@ const Body = () => {
         initialLoad={false}
         loader={<Loading key="loading" />}
       >
-        {data.allPeople.edges.map(({ node: { id, name } }) => (
-          <ListItem key={id} name={name} handleClick={() => setModalData({ visible: true, id })} />
+        {data.allPeople.edges.map(({ node: { id, name, gender } }) => (
+          <ListItem key={id} name={name} gender={gender} handleClick={() => setModalData({ visible: true, id })} />
         ))}
       </InfiniteScroll>
     </main>
