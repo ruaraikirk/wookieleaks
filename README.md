@@ -1,7 +1,5 @@
-<p style="text-align: center;">
-  <img src="src/assets/chewbacca_wookie_icon.svg" />
-</p>
-<p style="text-align: center; font-size: 42px">Wookieleaks</p>
+<img src="src/assets/chewbacca_wookie_icon.svg" />
+<h1>Wookieleaks</h1>
 
 Wookieleaks is a small web app built with Vite and React using SWAPI [via its GraphQL Wrapper](https://graphql.org/swapi-graphql).
 
