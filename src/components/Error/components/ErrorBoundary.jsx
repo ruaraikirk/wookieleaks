@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Error from './Error';
+import Error from '../index';
 
 /**
  * As of v18.2.0, there's no way to turn a functional component into an error boundary.

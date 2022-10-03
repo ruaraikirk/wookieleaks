@@ -1,12 +1,12 @@
-import React from 'react';
+import React, { memo } from 'react';
 import loading from '../assets/loading.gif';
 
 const Loading = () => {
   return (
-    <>
-      <img src={loading} alt="loading" />
-    </>
+    <div className="text-center">
+      <img className="max-h-20 mx-auto" src={loading} alt="loading" />
+    </div>
   );
 };
 
-export default Loading;
+export default memo(Loading);

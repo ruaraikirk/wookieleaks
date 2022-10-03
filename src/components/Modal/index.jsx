@@ -1,32 +1,11 @@
 import React from 'react';
-import { gql, useQuery } from '@apollo/client';
+import { useQuery } from '@apollo/client';
 import PropTypes from 'prop-types';
-import ModalWrapper from './ModalWrapper';
-import ModalBody from './ModalBody';
+import ModalWrapper from './components/ModalWrapper';
+import ModalBody from './components/ModalBody';
 import Loading from '../Loading';
-import Error from '../ErrorBoundary/Error';
-
-export const PERSON_QUERY = gql`
-  query person($id: ID) {
-    person(id: $id) {
-      name
-      id
-      birthYear
-      eyeColor
-      homeworld {
-        name
-      }
-      filmConnection {
-        edges {
-          node {
-            title
-            episodeID
-          }
-        }
-      }
-    }
-  }
-`;
+import Error from '../Error';
+import PERSON_QUERY from './queries/personQuery';
 
 const Modal = ({ onClose, modalData }) => {
   const { data, loading, error } = useQuery(PERSON_QUERY, { fetchPolicy: 'no-cache', variables: { id: modalData.id } });
