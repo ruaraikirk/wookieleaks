@@ -44,3 +44,11 @@ Hosted on [Netlify](https://lucent-hamster-a5cb19.netlify.app/)
    ```sh
    http://127.0.0.1:5173/
    ```
+
+## Tests
+
+Some example testing of UI cna be run using the following command.
+
+```sh
+npm run test
+```

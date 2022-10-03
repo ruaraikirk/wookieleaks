@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useQuery } from '@apollo/client';
+// eslint-disable-next-line import/namespace, import/default, import/no-named-as-default-member
 import InfiniteScroll from 'react-infinite-scroller';
 import ListItem from '../ListItem';
 import Loading from '../Loading';
@@ -23,7 +24,7 @@ const Body = () => {
 
   return (
     <main className="flex justify-around flex-1 overflow-auto">
-      <Modal modalData={modalData} onClose={() => setModalData({ visible: false, id: null })} name="Luke Skywalker" />
+      <Modal modalData={modalData} onClose={() => setModalData({ visible: false, id: null })} />
       <InfiniteScroll
         className="w-10/12"
         loadMore={() => loadMore(fetchMore, data)}
